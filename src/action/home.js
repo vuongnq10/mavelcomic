@@ -1,13 +1,7 @@
 // https://gateway.marvel.com/v1/public/characters?apikey=d27e40366e85f2183a92e44a0e5de1c3&hash=a2569606843ce4290964120edc22e132&ts=1551200573308&limit=10&offset=0
 /* eslint-disable */
-import md5 from 'md5';
 import qs from 'qs';
-
-const publicKey = 'd27e40366e85f2183a92e44a0e5de1c3';
-const privateKey = '4798e563144bef70356769014e04015c4e9a91a5'
-const timestamp = new Date().getTime();
-
-const hash = () => md5(`${timestamp}${privateKey}${publicKey}`)
+import { publicKey, hash, timestamp } from './keys';
 
 export const load = () => {
   return async (dispatch, getState) => {
@@ -15,7 +9,7 @@ export const load = () => {
 
     const params = {
       apikey: publicKey,
-      hash: hash(),
+      hash,
       ts: timestamp,
       orderBy: 'name',
       limit,
@@ -29,7 +23,7 @@ export const load = () => {
     dispatch({
       type: 'GET_CONTENT',
       offset: offset + limit,
-      data: characters.concat(data.data.results),
+      data: [...characters, ...data.data.results],
     });
   };
 };
@@ -39,7 +33,7 @@ export const get = id => {
   return async dispatch => {
     const params = {
       apikey: publicKey,
-      hash: hash(),
+      hash,
       ts: timestamp,
     };
 
