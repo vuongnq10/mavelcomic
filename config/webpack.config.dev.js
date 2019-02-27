@@ -74,7 +74,7 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/253
     modules: ['node_modules', paths.appNodeModules].concat(
       // It is guaranteed to exist because we tweak it in `env.js`
-      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
+      (process.env.NODE_PATH || 'src/').split(path.delimiter).filter(Boolean)
     ),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
@@ -183,7 +183,7 @@ module.exports = {
                 options: {
                   importLoaders: 1,
                   modules: true,
-                  localIdentName: process.env.CLASS_FORMAT === 'full' ? "[path][name]--[local]" : "[hash:base64:5]",
+                  localIdentName: "[path][name]--[local]",
                 },
               },
               {

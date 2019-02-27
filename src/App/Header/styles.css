@@ -1,0 +1,21 @@
+.home {
+  background: url('./banner.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.slogan {
+  margin: 30px auto;
+  text-align: center;
+  max-width: 500px;
+  color: #fff;
+}
+
+.description {
+  margin: 0px auto;
+  text-align: center;
+  color: #fff;
+}

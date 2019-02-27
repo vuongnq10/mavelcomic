@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 
-import { load } from 'action/home';
+import { get } from 'action/home';
 import Container from './Container';
 
 const mapStateToProps = state => ({
-  characters: state.home.characters,
+  hero: state.home.hero,
 });
 
 const mapDispatchToProps = dispatch => ({
-  load: () => dispatch(load()),
+  get: id => dispatch(get(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);
