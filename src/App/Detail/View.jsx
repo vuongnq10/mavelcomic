@@ -22,7 +22,7 @@ const View = ({ loading, hero }) => (
           <div className="col-lg-9 col-12">
             <Card.Title>Description</Card.Title>
             <Card.Text>{hero.description || 'N/A'}</Card.Text>
-            <Card.Title>Commics</Card.Title>
+            <Card.Title>Comics</Card.Title>
             {hero.comics && hero.comics.items.map((item, i) => (<Comic
               id={item.resourceURI.split(/[\s/]+/).pop()}
               key={i}
