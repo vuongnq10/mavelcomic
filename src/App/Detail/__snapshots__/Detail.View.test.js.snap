@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Detail component: loading = false 1`] = `
+<div
+  className="container undefined"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-header"
+    >
+      abc
+    </div>
+    <div
+      className="card-body"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-3 col-12"
+        >
+          <img
+            alt="abc"
+            className="img-thumbnail"
+            src="path.extension"
+          />
+        </div>
+        <div
+          className="col-lg-9 col-12"
+        >
+          <div
+            className="card-title h5"
+          >
+            Description
+          </div>
+          <p
+            className="card-text"
+          >
+            N/A
+          </p>
+          <div
+            className="card-title h5"
+          >
+            Comics
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Renders Detail component: loading = true 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</div>
+`;

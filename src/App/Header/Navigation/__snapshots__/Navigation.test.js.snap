@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Navigation component 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light"
+>
+  <a
+    className="navbar-brand"
+    href="/"
+  >
+    <img
+      alt=""
+      height="24px"
+      src="favicon.ico"
+    />
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="justify-content-end navbar-collapse collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        aria-controls={undefined}
+        className="nav-link"
+        data-rb-event-key="/"
+        href="/"
+        id={undefined}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Home
+      </a>
+      <a
+        aria-controls={undefined}
+        className="nav-link"
+        data-rb-event-key="/"
+        href="/"
+        id={undefined}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        About Us
+      </a>
+      <a
+        aria-controls={undefined}
+        className="nav-link"
+        data-rb-event-key="/"
+        href="/"
+        id={undefined}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Info
+      </a>
+    </div>
+  </div>
+</nav>
+`;

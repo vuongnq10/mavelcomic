@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Home View component loading=false 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    List of heroes you will love
+  </h1>
+</div>
+`;
+
+exports[`Renders Home View component: loading=true 1`] = `
+Array [
+  <div
+    className="container"
+>
+    <h1>
+        List of heroes you will love
+    </h1>
+</div>,
+  <div
+    className={undefined}
+>
+    <div
+        className={undefined}
+    >
+        <div />
+        <div />
+        <div />
+        <div />
+    </div>
+</div>,
+]
+`;

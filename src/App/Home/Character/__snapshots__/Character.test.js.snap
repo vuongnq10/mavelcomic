@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Character component 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-3 col-12"
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <img
+              alt="Comic"
+              className="img-thumbnail"
+              src="path.extension"
+            />
+          </a>
+        </div>
+        <div
+          className="col-lg-9 col-12"
+        >
+          <div
+            className="card-title h5"
+          >
+            Comic
+          </div>
+          <p
+            className="card-text"
+          >
+            \`description\`
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
