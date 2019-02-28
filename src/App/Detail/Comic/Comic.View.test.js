@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import View from './View';
 
-it('Renders App component: loading = true', () => {
+it('Renders Comic component: loading = true', () => {
   const component = (<View comic={{}} loading={true} />);
   const index = renderer
     .create(component)
@@ -12,7 +12,7 @@ it('Renders App component: loading = true', () => {
   expect(index).toMatchSnapshot();
 });
 
-it('Renders App component: loading = false', () => {
+it('Renders Comic component: loading = false', () => {
   const component = (<View comic={{
     name: 'abc',
     thumbnail: {

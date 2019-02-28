@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders App component: loading = false 1`] = `
+exports[`Renders Comic component: loading = false 1`] = `
 <div
   className={undefined}
 >
@@ -45,7 +45,7 @@ exports[`Renders App component: loading = false 1`] = `
 </div>
 `;
 
-exports[`Renders App component: loading = true 1`] = `
+exports[`Renders Comic component: loading = true 1`] = `
 <div
   className={undefined}
 >
